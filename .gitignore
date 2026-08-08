@@ -1,0 +1,44 @@
+# Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Secrets / config
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specifics
+uploads/*
+!uploads/.gitkeep
+models/*
+!models/.gitkeep
+
+test_resume.pdf
+advanced_test_resume.pdf
+*.pdf
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

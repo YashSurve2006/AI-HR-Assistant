@@ -1,0 +1,36 @@
+feedback_id,employee_name,department,rating,feedback,date
+1,Ananya Sharma,Engineering,5,The onboarding process was smooth and my team made me feel welcome from day one.,2025-11-04
+2,Rahul Mehta,Data Science,5,Great work-life balance with flexible WFH options. Really appreciate the trust.,2025-11-12
+3,Priya Nair,Human Resources,4,My manager provides clear guidance and regular feedback which helps me grow.,2025-12-01
+4,Vikram Singh,Infrastructure,5,The learning reimbursement program helped me complete my AWS certification.,2025-12-08
+5,Sneha Patel,Engineering,4,Team collaboration tools work well and communication across departments is effective.,2026-01-06
+6,Arjun Reddy,Product,5,Company culture is inclusive and team events are well organized.,2026-01-15
+7,Meera Iyer,Finance,5,Health insurance coverage for my family gives me peace of mind.,2026-01-22
+8,Karan Desai,Data Science,5,Received a fair performance bonus that reflected my contributions this year.,2026-02-03
+9,Divya Krishnan,Human Resources,4,The HR portal makes leave applications and payroll queries very easy.,2026-02-10
+10,Rohit Gupta,Engineering,4,Training sessions on new technologies are informative and well structured.,2026-02-18
+11,Neha Kapoor,Quality Assurance,5,Promotion process was transparent and I received constructive feedback throughout.,2026-02-25
+12,Amit Joshi,Support,4,Office facilities are clean and the cafeteria offers good meal options.,2026-03-02
+13,Shreya Banerjee,Engineering,2,Salary is often delayed by a few days past the promised credit date.,2025-11-18
+14,Deepak Verma,Data Science,2,Workload has increased significantly without additional resources or support.,2025-12-05
+15,Kavita Rao,Product,2,Communication from leadership during the restructuring was unclear and delayed.,2025-12-19
+16,Siddharth Malhotra,Infrastructure,2,The approval process for WFH requests takes too long and is inconsistent.,2026-01-09
+17,Pooja Shah,Engineering,1,Overtime hours are not always compensated despite prior manager approval.,2026-01-17
+18,Nikhil Agarwal,Finance,2,Performance review criteria were changed mid-cycle without proper explanation.,2026-01-28
+19,Anjali Menon,Support,2,IT support response time for laptop issues is unacceptably slow.,2026-02-07
+20,Varun Chopra,Engineering,2,Limited career growth opportunities in my department over the past two years.,2026-02-14
+21,Swati Pillai,Quality Assurance,3,The office parking situation has become worse with no solutions offered.,2026-02-21
+22,Manish Tiwari,Infrastructure,1,Mandatory weekend work was announced with very short notice last month.,2026-03-01
+23,Rekha Nambiar,Human Resources,2,HR helpdesk did not respond to my payroll query for over a week.,2026-03-05
+24,Aditya Kulkarni,Engineering,2,Team morale has dropped since the recent layoffs were handled poorly.,2026-03-08
+25,Preeti Saxena,Data Science,2,The new attendance tracking system frequently shows incorrect records.,2026-03-10
+26,Harish Bhatt,Engineering,3,Project deadlines are reasonable most of the time but can get tight near releases.,2025-11-22
+27,Lakshmi Venkatesh,Product,3,The office location is convenient but commute during peak hours is lengthy.,2025-12-11
+28,Gaurav Mishra,Finance,3,Standard company benefits are adequate though not exceptional compared to industry.,2025-12-28
+29,Tanvi Deshmukh,Engineering,3,Daily standup meetings are useful but sometimes run longer than necessary.,2026-01-13
+30,Abhishek Roy,Infrastructure,3,Documentation for internal tools exists but could be more detailed and updated.,2026-01-24
+31,Ishita Chawla,Human Resources,3,The dress code policy is standard for IT companies and easy to follow.,2026-02-01
+32,Sanjay Pillai,Support,3,Cafeteria food quality varies day to day but is generally acceptable.,2026-02-11
+33,Richa Bansal,Quality Assurance,3,Annual leave policy is in line with what I expected when I joined.,2026-02-19
+34,Yash Malviya,Engineering,3,The probation review process was straightforward with clear expectations.,2026-02-27
+35,Keerthi Subramanian,Product,3,Company holiday calendar covers major festivals but optional holidays are limited.,2026-03-04

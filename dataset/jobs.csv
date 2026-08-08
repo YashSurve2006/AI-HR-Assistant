@@ -1,0 +1,93 @@
+job_id,title,department,description,required_skills,experience,location,experience_level
+1,Software Engineer,Software Engineering,Write clean maintainable code participate in code reviews and contribute to software design and development.,"java,python,data structures,algorithms,git,sql",0-2 years,Pune,Fresher
+2,Software Developer,Software Engineering,Develop and maintain software applications working closely with product and design teams.,"c++,java,python,agile,git",2-5 years,Remote,Mid Level
+3,Backend Developer,Software Engineering,Develop robust server-side applications microservices and database integrations for enterprise systems.,"java,spring boot,rest api,microservices,sql,redis",2-5 years,Chennai,Mid Level
+4,Frontend Developer,Software Engineering,Create responsive and accessible user interfaces using modern frontend frameworks and best practices.,"html,css,javascript,react,typescript,responsive design",2-5 years,Mumbai,Mid Level
+5,Full Stack Developer,Software Engineering,Build end-to-end web applications handling both frontend interfaces and backend server logic.,"javascript,react,node.js,python,sql,mongodb",0-2 years,Delhi,Fresher
+6,Java Developer,Software Engineering,Design develop and maintain Java-based enterprise applications.,"java,spring boot,hibernate,maven,sql,git",0-2 years,Kolkata,Fresher
+7,Python Developer,Software Engineering,Design and develop backend services and APIs using Python frameworks for internal and client-facing applications.,"python,django,flask,rest api,sql,git",5-8+ years,Pune,Senior
+8,Node.js Developer,Software Engineering,Build scalable network applications and backend services using Node.js.,"node.js,express,javascript,mongodb,rest api",2-5 years,Remote,Mid Level
+9,.NET Developer,Software Engineering,Develop and deploy enterprise applications using the .NET framework.,"c#,.net,asp.net,sql server,azure",5-8+ years,Kolkata,Senior
+10,Mobile App Developer,Software Engineering,Design and build advanced applications for iOS and Android platforms.,"swift,kotlin,react native,flutter,mobile ui",5-8+ years,Ahmedabad,Senior
+11,DevOps Engineer,Software Engineering,Automate deployment pipelines manage cloud infrastructure and ensure system reliability and scalability.,"docker,kubernetes,ci/cd,aws,jenkins,terraform,linux",0-2 years,Ahmedabad,Entry Level
+12,Cloud Engineer,Software Engineering,Design and manage cloud infrastructure solutions ensuring high availability security and cost optimization.,"aws,azure,cloud architecture,terraform,docker,networking",2-5 years,Hyderabad,Mid Level
+13,Site Reliability Engineer,Software Engineering,Ensure maximum uptime and performance of our infrastructure and services.,"linux,python,kubernetes,monitoring,aws,troubleshooting",0-2 years,Hyderabad,Entry Level
+14,Data Analyst,Data,Analyze business data build dashboards and generate insights to support data-driven decision making across departments.,"python,sql,excel,statistics,data visualization,power bi",2-5 years,Ahmedabad,Mid Level
+15,Data Scientist,Data,Develop predictive models design experiments and deploy ML solutions to solve complex business problems.,"python,machine learning,statistics,pandas,numpy,scikit-learn",5-8+ years,Mumbai,Senior
+16,Machine Learning Engineer,Data,Build and deploy scalable machine learning pipelines and maintain production ML systems.,"python,tensorflow,pytorch,mlops,docker,kubernetes",2-5 years,Bangalore,Mid Level
+17,AI Engineer,Data,Develop artificial intelligence models for language and vision applications.,"python,deep learning,nlp,computer vision,pytorch,transformers",2-5 years,Remote,Mid Level
+18,NLP Engineer,Data,Build natural language processing systems for text classification and generation.,"python,nlp,spacy,transformers,huggingface,machine learning",2-5 years,Kolkata,Mid Level
+19,Data Engineer,Data,Design and build data pipelines architectures and scalable data processing systems.,"python,sql,spark,hadoop,kafka,aws,etl",0-2 years,Gurgaon,Entry Level
+20,BI Developer,Data,Develop and maintain business intelligence solutions and interactive dashboards.,"power bi,tableau,sql,data warehousing,etl",0-2 years,Gurgaon,Entry Level
+21,ML Ops Engineer,Data,Deploy and monitor machine learning models in production environments.,"mlops,docker,kubernetes,python,ci/cd,aws",5-8+ years,Gurgaon,Senior
+22,Cybersecurity Analyst,Cybersecurity,Monitor security threats conduct vulnerability assessments and implement security policies to protect company assets.,"network security,siem,penetration testing,incident response,firewall",5-8+ years,Remote,Senior
+23,Security Engineer,Cybersecurity,Design and implement security solutions to protect enterprise networks and systems.,"security architecture,firewalls,encryption,linux,python",5-8+ years,Delhi,Senior
+24,SOC Analyst,Cybersecurity,Monitor analyze and respond to security alerts in the Security Operations Center.,"soc,siem,incident response,threat hunting,network security",2-5 years,Bangalore,Mid Level
+25,Network Engineer,Cybersecurity,Design implement and maintain corporate network infrastructure ensuring secure and reliable connectivity.,"networking,cisco,routing,switching,firewall,vpn",2-5 years,Pune,Mid Level
+26,Network Administrator,Cybersecurity,Manage daily network operations monitor performance and resolve network issues.,"networking,lan,wan,tcp/ip,troubleshooting",0-2 years,Kolkata,Entry Level
+27,Cloud Security Engineer,Cybersecurity,Implement and manage security measures for cloud-based infrastructure and applications.,"cloud security,aws,azure,iam,compliance,encryption",2-5 years,Chennai,Mid Level
+28,Security Operations Engineer,Cybersecurity,Operate and maintain security tools and platforms for threat detection.,"security tools,splunk,ids/ips,python,linux",2-5 years,Chennai,Mid Level
+29,Database Administrator,Database,Manage database systems ensure data integrity optimize query performance and handle backup and recovery.,"sql,oracle,postgresql,mysql,database tuning,backup recovery",5-8+ years,Delhi,Senior
+30,SQL Developer,Database,Write complex SQL queries stored procedures and optimize database performance.,"sql,t-sql,pl/sql,database design,optimization",2-5 years,Chennai,Mid Level
+31,Oracle Developer,Database,Develop and maintain applications using Oracle database technologies.,"oracle,pl/sql,sql,database tuning,forms",2-5 years,Chennai,Mid Level
+32,Data Warehouse Engineer,Database,Design and build scalable data warehouse solutions for enterprise analytics.,"data warehousing,sql,etl,redshift,snowflake,python",0-2 years,Pune,Fresher
+33,QA Engineer,QA,Design test cases execute manual and automated tests and ensure software quality before release.,"manual testing,automation testing,selenium,java,api testing,jira",2-5 years,Kolkata,Mid Level
+34,Software Test Engineer,QA,Develop and execute software test plans to identify software problems and their causes.,"testing,test planning,jira,selenium,python",2-5 years,Remote,Mid Level
+35,Automation Test Engineer,QA,Create and maintain automated test frameworks and scripts for web and mobile applications.,"automation,selenium,appium,java,python,ci/cd",2-5 years,Navi Mumbai,Mid Level
+36,Performance Test Engineer,QA,Conduct performance load and stress testing on software applications.,"jmeter,loadrunner,performance testing,api testing,monitoring",2-5 years,Kolkata,Mid Level
+37,AWS Cloud Engineer,Cloud,Design implement and maintain highly available AWS cloud environments.,"aws,ec2,s3,vpc,iam,terraform",5-8+ years,Navi Mumbai,Senior
+38,Azure Cloud Engineer,Cloud,Manage and deploy applications on Microsoft Azure cloud infrastructure.,"azure,arm templates,active directory,powershell,cloud services",2-5 years,Kolkata,Mid Level
+39,Kubernetes Engineer,Cloud,Manage container orchestration platforms and microservices deployments.,"kubernetes,docker,helm,linux,networking",2-5 years,Hyderabad,Mid Level
+40,Linux System Administrator,Cloud,Install configure and maintain Linux servers and systems.,"linux,bash,shell scripting,troubleshooting,system administration",5-8+ years,Remote,Senior
+41,Infrastructure Engineer,Cloud,Design and support scalable IT infrastructure and network solutions.,"infrastructure,networking,virtualization,vmware,linux",5-8+ years,Hyderabad,Senior
+42,Platform Engineer,Cloud,Build and maintain internal developer platforms to accelerate software delivery.,"platform engineering,kubernetes,aws,ci/cd,python,go",2-5 years,Mumbai,Mid Level
+43,Business Analyst,Product,Gather business requirements create functional specifications and bridge communication between stakeholders and development teams.,"sql,excel,data analysis,requirements gathering,agile,communication",2-5 years,Gurgaon,Mid Level
+44,Technical Business Analyst,Product,Analyze technical requirements and design solutions connecting business needs with IT capabilities.,"agile,sql,system design,requirements gathering,api",2-5 years,Remote,Mid Level
+45,Product Analyst,Product,Analyze product usage data to drive product decisions and feature enhancements.,"data analysis,sql,mixpanel,google analytics,product strategy",2-5 years,Ahmedabad,Mid Level
+46,Technical Support Engineer,Product,Provide technical support to clients diagnose and resolve issues and document solutions in the knowledge base.,"troubleshooting,networking,linux,windows,customer support,ticketing systems",2-5 years,Mumbai,Mid Level
+47,IT Support Engineer,Product,Resolve hardware and software issues for internal employees and manage IT inventory.,"it support,windows,macos,active directory,troubleshooting",2-5 years,Pune,Mid Level
+48,Solutions Engineer,Product,Design and propose technical solutions to meet client business requirements.,"solution architecture,presentation,technical sales,cloud,api",2-5 years,Navi Mumbai,Mid Level
+49,System Analyst,Product,Evaluate and design IT systems to improve business efficiency and productivity.,"system analysis,requirements gathering,uml,sql,process mapping",2-5 years,Mumbai,Mid Level
+50,Technical Consultant,Product,Advise clients on technical strategies and implement software solutions.,"consulting,software implementation,communication,project management,sql",2-5 years,Delhi,Mid Level
+51,Software Engineer Intern,Engineering,Assist in developing and testing software applications while learning best practices.,"java,python,c++,data structures,git",0 years,Gurgaon,Internship
+52,Data Analyst Intern,Engineering,Support data teams by cleaning data and creating simple dashboards.,"excel,sql,python,data cleaning",0 years,Mumbai,Internship
+53,Python Developer Intern,Engineering,Help build backend scripts and APIs under the guidance of senior developers.,"python,flask,git,sql",0 years,Remote,Internship
+54,Web Developer Intern,Engineering,Assist in building web pages and resolving frontend bugs.,"html,css,javascript,react",0 years,Delhi,Internship
+55,Machine Learning Intern,Engineering,Help train models and prepare datasets for machine learning experiments.,"python,pandas,scikit-learn,jupyter",0 years,Pune,Internship
+56,Cybersecurity Intern,Engineering,Support the security team in monitoring alerts and researching vulnerabilities.,"networking,linux,security basics",0 years,Bangalore,Internship
+57,Network Engineer Intern,Engineering,Assist with network configuration and troubleshooting tasks.,"networking,cisco,tcp/ip,troubleshooting",0 years,Mumbai,Internship
+58,Senior Infrastructure Engineer,Cloud,Design and support scalable IT infrastructure and network solutions.,"infrastructure,networking,virtualization,vmware,linux",5-10 years,Gurgaon,Senior
+59,Senior Kubernetes Engineer,Cloud,Manage container orchestration platforms and microservices deployments.,"kubernetes,docker,helm,linux,networking",5-10 years,Navi Mumbai,Senior
+60,Senior Solutions Engineer,Product,Design and propose technical solutions to meet client business requirements.,"solution architecture,presentation,technical sales,cloud,api",5-10 years,Noida,Senior
+61,Senior Data Scientist,Data,Develop predictive models design experiments and deploy ML solutions to solve complex business problems.,"python,machine learning,statistics,pandas,numpy,scikit-learn",5-10 years,Navi Mumbai,Senior
+62,Senior Automation Test Engineer,QA,Create and maintain automated test frameworks and scripts for web and mobile applications.,"automation,selenium,appium,java,python,ci/cd",5-10 years,Kolkata,Senior
+63,Web Developer Intern,Engineering,Assist in building web pages and resolving frontend bugs.,"html,css,javascript,react",0 years,Gurgaon,Internship
+64,Senior AWS Cloud Engineer,Cloud,Design implement and maintain highly available AWS cloud environments.,"aws,ec2,s3,vpc,iam,terraform",5-10 years,Ahmedabad,Senior
+65,Senior SQL Developer,Database,Write complex SQL queries stored procedures and optimize database performance.,"sql,t-sql,pl/sql,database design,optimization",5-10 years,Delhi,Senior
+66,Python Developer Intern,Engineering,Help build backend scripts and APIs under the guidance of senior developers.,"python,flask,git,sql",0 years,Hyderabad,Internship
+67,Senior Performance Test Engineer,QA,Conduct performance load and stress testing on software applications.,"jmeter,loadrunner,performance testing,api testing,monitoring",5-10 years,Remote,Senior
+68,Senior Software Test Engineer,QA,Develop and execute software test plans to identify software problems and their causes.,"testing,test planning,jira,selenium,python",5-10 years,Chennai,Senior
+69,Senior QA Engineer,QA,Design test cases execute manual and automated tests and ensure software quality before release.,"manual testing,automation testing,selenium,java,api testing,jira",5-10 years,Mumbai,Senior
+70,Senior Product Analyst,Product,Analyze product usage data to drive product decisions and feature enhancements.,"data analysis,sql,mixpanel,google analytics,product strategy",5-10 years,Kolkata,Senior
+71,Senior .NET Developer,Software Engineering,Develop and deploy enterprise applications using the .NET framework.,"c#,.net,asp.net,sql server,azure",5-10 years,Mumbai,Senior
+72,Senior Oracle Developer,Database,Develop and maintain applications using Oracle database technologies.,"oracle,pl/sql,sql,database tuning,forms",5-10 years,Ahmedabad,Senior
+73,Senior Cloud Engineer,Software Engineering,Design and manage cloud infrastructure solutions ensuring high availability security and cost optimization.,"aws,azure,cloud architecture,terraform,docker,networking",5-10 years,Delhi,Senior
+74,Senior QA Engineer,QA,Design test cases execute manual and automated tests and ensure software quality before release.,"manual testing,automation testing,selenium,java,api testing,jira",5-10 years,Ahmedabad,Senior
+75,Senior Technical Consultant,Product,Advise clients on technical strategies and implement software solutions.,"consulting,software implementation,communication,project management,sql",5-10 years,Kolkata,Senior
+76,Senior Mobile App Developer,Software Engineering,Design and build advanced applications for iOS and Android platforms.,"swift,kotlin,react native,flutter,mobile ui",5-10 years,Pune,Senior
+77,Web Developer Intern,Engineering,Assist in building web pages and resolving frontend bugs.,"html,css,javascript,react",0 years,Pune,Internship
+78,Senior Oracle Developer,Database,Develop and maintain applications using Oracle database technologies.,"oracle,pl/sql,sql,database tuning,forms",5-10 years,Ahmedabad,Senior
+79,Senior Software Engineer,Software Engineering,Write clean maintainable code participate in code reviews and contribute to software design and development.,"java,python,data structures,algorithms,git,sql",5-10 years,Noida,Senior
+80,Senior Software Engineer,Software Engineering,Write clean maintainable code participate in code reviews and contribute to software design and development.,"java,python,data structures,algorithms,git,sql",5-10 years,Noida,Senior
+81,Network Engineer,IT Infrastructure,"Design, implement, and manage corporate network infrastructure including routers, switches, and firewalls.","cisco,routing,switching,firewalls,tcp/ip,vpn",2-5 years,Bangalore,Mid Level
+82,Senior Network Architect,IT Infrastructure,"Lead the design and strategy for enterprise-level network architectures, ensuring high availability and security.","network architecture,bgp,ospf,sd-wan,cloud networking,ccie",10+ years,Remote,Senior
+83,Network Security Engineer,Cybersecurity,"Monitor and protect network infrastructure from security threats, configuring firewalls and IDS/IPS systems.","firewalls,ids/ips,vpn,network security,wireshark",3-7 years,Hyderabad,Mid Level
+84,Junior Network Administrator,IT Support,"Assist in daily network operations, monitoring performance, and troubleshooting connectivity issues.","troubleshooting,lan/wan,tcp/ip,network monitoring",0-2 years,Pune,Fresher
+85,Cloud Network Engineer,Cloud Infrastructure,Design and maintain secure networking environments within AWS and Azure cloud platforms.,"aws vpc,azure networking,cloud security,terraform,vpn",4-8 years,Mumbai,Mid Level
+86,Senior Product Manager,Product,"Define product vision and strategy for enterprise SaaS applications, collaborating with engineering and design teams.","product management,agile,jira,user research,roadmap planning",5-10 years,Mumbai,Senior
+87,Data Analyst,Data Science,Analyze large datasets to extract actionable business insights and build comprehensive BI dashboards.,"sql,python,tableau,power bi,data visualization,excel",2-5 years,Mumbai,Mid Level
+88,DevOps Engineer,Engineering,"Build and maintain CI/CD pipelines, manage cloud infrastructure, and ensure high availability of production services.","kubernetes,docker,aws,jenkins,terraform,linux",3-7 years,Mumbai,Mid Level
+89,Full Stack Developer (MERN),Software Engineering,"Develop scalable web applications using MongoDB, Express, React, and Node.js.","javascript,react,node.js,mongodb,express,rest api",2-5 years,Mumbai,Mid Level
+90,Senior UI/UX Designer,Design,"Lead the design of intuitive user interfaces, conduct user research, and create interactive prototypes.","figma,adobe xd,ui/ux,wireframing,prototyping,user research",5-8 years,Mumbai,Senior
+91,Financial Analyst,Finance,"Prepare financial reports, perform variance analysis, and assist in corporate budgeting and forecasting.","financial modeling,excel,variance analysis,forecasting,sap",2-5 years,Mumbai,Mid Level
+92,Technical Project Manager,Project Management,"Manage end-to-end software delivery lifecycles, mitigate risks, and coordinate between technical and business stakeholders.","project management,scrum,jira,risk management,stakeholder management",4-8 years,Mumbai,Mid Level
