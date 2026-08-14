@@ -989,5 +989,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   init();
 
+  /* Expose for automation */
+  window.__playwright_handleFileUpload = handleFileSelection;
+
 }); // end DOMContentLoaded
 
