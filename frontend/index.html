@@ -3,244 +3,250 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lumina HR | Premium AI Assistant</title>
+  <title>Lumina HR | AI Talent & HR Intelligence Assistant</title>
+  
+  <!-- Modern Font & Material Symbols Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
   
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
+  <nav class="navbar" id="main-nav">
     <div class="nav-inner">
       <a href="#" class="nav-brand">
         <div class="nav-logo">
           <span class="material-symbols-outlined">auto_awesome</span>
         </div>
-        <span class="nav-title">Lumina HR</span>
+        <div class="nav-brand-text">
+          <span class="nav-title">Lumina HR</span>
+          <span class="nav-badge">AI Assistant</span>
+        </div>
       </a>
       
       <div class="nav-links" id="nav-links">
-        <a href="#section-overview" class="nav-link" data-section="section-overview">Overview</a>
-        <a href="#section-chat" class="nav-link" data-section="section-chat">AI Chat</a>
-        <a href="#section-resume" class="nav-link" data-section="section-resume">Resume Intel</a>
-        <a href="#section-jobs" class="nav-link" data-section="section-jobs">Job Directory</a>
-        <a href="#section-insights" class="nav-link" data-section="section-insights">Insights</a>
+        <a href="#section-chat" class="nav-link active" data-section="section-chat">
+          <span class="material-symbols-outlined">smart_toy</span> AI Chatbot
+        </a>
+        <a href="#section-jobs" class="nav-link" data-section="section-jobs">
+          <span class="material-symbols-outlined">work</span> Job Directory
+        </a>
+        <a href="#section-insights" class="nav-link" data-section="section-insights">
+          <span class="material-symbols-outlined">monitoring</span> Analytics
+        </a>
       </div>
 
       <div class="nav-right">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Light / Dark Mode" title="Toggle theme">
           <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
         </button>
-        <div class="status-indicator">
+        <div class="status-indicator" title="Backend Server Status">
           <div id="status-dot" class="status-dot"></div>
           <span id="status-text">Connecting...</span>
         </div>
-        <button id="hamburger" class="hamburger">
+        <button id="hamburger" class="hamburger" aria-label="Toggle Navigation">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </div>
   </nav>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- ===== MAIN WORKSPACE ===== -->
   <main class="main-content">
     
-    <!-- OVERVIEW / HERO -->
-    <section id="section-overview" class="section scroll-mt-24">
-      <div class="hero">
-        <h1 class="hero-title">Intelligent HR assistance powered by <span class="gradient-text">AI & Data Science.</span></h1>
-        <p class="hero-subtitle">Optimize your recruitment, analyze talent with precision, and uncover deep workforce insights instantly.</p>
-        <div class="hero-actions">
-          <a href="#section-chat" class="btn btn--primary">
-            <span class="material-symbols-outlined">forum</span> Ask HR Assistant
-          </a>
-          <a href="#section-resume" class="btn btn--ghost">
-            <span class="material-symbols-outlined">description</span> Analyze Resume
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature Navigation Cards -->
-      <div class="features-grid">
-        <a href="#section-chat" class="feature-card glass-card fc-indigo">
-          <div class="feature-icon"><span class="material-symbols-outlined">smart_toy</span></div>
-          <h3 class="feature-title">AI HR Chat</h3>
-          <p class="feature-desc">Natural language answers to HR policy and compliance questions.</p>
-        </a>
-        <a href="#section-resume" class="feature-card glass-card fc-violet">
-          <div class="feature-icon"><span class="material-symbols-outlined">plagiarism</span></div>
-          <h3 class="feature-title">Resume Intelligence</h3>
-          <p class="feature-desc">Deep NLP analysis and algorithmic scoring of candidate profiles.</p>
-        </a>
-        <a href="#section-jobs" class="feature-card glass-card fc-teal">
-          <div class="feature-icon"><span class="material-symbols-outlined">work</span></div>
-          <h3 class="feature-title">Smart Job Matching</h3>
-          <p class="feature-desc">TF-IDF recommendations linking talent to live active roles.</p>
-        </a>
-        <a href="#section-insights" class="feature-card glass-card fc-amber">
-          <div class="feature-icon"><span class="material-symbols-outlined">monitoring</span></div>
-          <h3 class="feature-title">Feedback Analytics</h3>
-          <p class="feature-desc">Real-time sentiment analysis of employee satisfaction data.</p>
-        </a>
-      </div>
-
-      <!-- High-level Stats -->
-      <div class="stats-grid insights-stats" style="margin-top:24px;">
-        <div class="insight-card glass-card insight-card--green">
-          <span class="material-symbols-outlined">business_center</span>
-          <div>
-            <div class="insight-label">Total Roles</div>
-            <div class="insight-value" id="stat-total-jobs">0</div>
-          </div>
-        </div>
-        <div class="insight-card glass-card insight-card--gray">
-          <span class="material-symbols-outlined">forum</span>
-          <div>
-            <div class="insight-label">Feedback Entries</div>
-            <div class="insight-value" id="stat-total-feedback">0</div>
-          </div>
-        </div>
-        <div class="insight-card glass-card insight-card--amber">
-          <span class="material-symbols-outlined">star</span>
-          <div>
-            <div class="insight-label">Avg Rating</div>
-            <div class="insight-value" id="stat-avg-rating">0.0</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI CHAT -->
-    <section id="section-chat" class="section scroll-mt-24">
-      <div class="section-header">
-        <span class="material-symbols-outlined section-icon">chat_bubble</span>
-        <h2 class="section-title">AI Assistant</h2>
-      </div>
-      <p class="section-desc">Ask questions about HR policies, leave balance, or general company rules.</p>
+    <!-- CENTRAL AI CHATBOT SECTION -->
+    <section id="section-chat" class="section chat-main-section scroll-mt-24">
       
-      <div class="chat-wrapper glass-card">
-        <div class="chat-messages" id="chat-messages">
-          <div class="chat-msg chat-msg--ai">
-            <div class="chat-bubble">
-              <p>Hello! I am Lumina, your AI HR Assistant. How can I help you today?</p>
-              <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">
-                <strong>Try asking:</strong><br/>
-                &bull; "How many sick leaves can I take?"<br/>
-                &bull; "What is the work from home policy?"<br/>
-                &bull; "When is the next performance review?"
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="chat-input-area">
-          <input type="text" id="chat-input" class="chat-input" placeholder="Type your HR question..." autocomplete="off" />
-          <button id="chat-send" class="btn btn--primary" aria-label="Send Message">
-            <span class="material-symbols-outlined">send</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME INTELLIGENCE -->
-    <section id="section-resume" class="section scroll-mt-24">
-      <div class="section-header">
-        <span class="material-symbols-outlined section-icon">plagiarism</span>
-        <h2 class="section-title">Resume Intelligence</h2>
-      </div>
-      <p class="section-desc">Upload a candidate's resume (PDF) to instantly extract skills and calculate an ATS score.</p>
-      
-      <!-- Upload Zone -->
-      <div id="upload-zone" class="upload-card">
-        <span class="material-symbols-outlined upload-icon">cloud_upload</span>
-        <h3 class="upload-title">Drag & Drop Resume</h3>
-        <p class="upload-sub">or <button id="browse-btn" class="link-btn">browse files</button></p>
-        <p id="upload-hint" class="upload-hint">Supported format: PDF (Max 10MB)</p>
-        <input type="file" id="resume-file-input" accept="application/pdf" class="hidden" />
-      </div>
-      
-      <div class="resume-actions">
-        <button id="analyze-btn" class="btn btn--primary" disabled>
-          <span class="material-symbols-outlined">analytics</span> Analyze Resume
-        </button>
-        <button id="recommend-btn" class="btn btn--ghost" disabled>
-          <span class="material-symbols-outlined">join_inner</span> Recommend Jobs
-        </button>
-      </div>
-      
-      <!-- Loading State -->
-      <div id="resume-loading" class="loading-state hidden glass-card">
-        <div class="spinner"></div>
-        Processing document using NLP...
-      </div>
-      
-      <!-- Results Grid -->
-      <div id="resume-results" class="results-area hidden">
-        <h3 class="section-title" style="margin-bottom: 24px; font-size:24px;">Analysis Report</h3>
-        <div class="results-grid">
-          
-          <!-- Score -->
-          <div class="score-card glass-card">
-            <h4 style="font-size:16px; font-weight:600; margin-bottom:16px;">ATS Score</h4>
-            <div class="score-ring-wrap">
-              <svg class="score-ring" viewBox="0 0 110 110">
-                <defs>
-                  <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="var(--primary)" />
-                    <stop offset="100%" stop-color="var(--secondary)" />
-                  </linearGradient>
-                </defs>
-                <circle class="score-ring-bg" cx="55" cy="55" r="50"></circle>
-                <circle id="score-ring-fill" class="score-ring-fill" cx="55" cy="55" r="50" stroke-dasharray="314.16" stroke-dashoffset="314.16"></circle>
-              </svg>
-              <div class="score-center">
-                <span id="score-number" class="score-number">0</span>
-                <span class="score-max">/ 100</span>
-              </div>
-            </div>
-            <div id="score-filename" class="score-filename"></div>
-            <div id="text-length-info" style="font-size:12px; color:var(--text-label); margin-top:8px;"></div>
-          </div>
-          
-          <!-- Breakdown -->
-          <div class="breakdown-card glass-card">
-            <h4 style="font-size:16px; font-weight:600; margin-bottom:24px;">Evaluation Criteria</h4>
-            <div id="breakdown-bars" class="breakdown-bars">
-              <!-- populated by JS -->
-            </div>
-          </div>
-          
+      <!-- Top Assistant Header & Stats Strip -->
+      <div class="assistant-hero">
+        <div class="assistant-hero-title">
+          <h1>AI-Powered <span class="gradient-text">HR & Talent Intelligence</span></h1>
+          <p>Ask company HR policies, analyze resumes for ATS scoring, discover matching career openings, and prepare for interviews.</p>
         </div>
         
-        <!-- Skills Extracted -->
-        <div class="skills-card glass-card">
-          <h4 style="font-size:16px; font-weight:600;">Technical Skills Detected <span id="skill-count" class="badge">0</span></h4>
-          <div id="skills-cloud" class="skills-cloud">
-            <!-- populated by JS -->
+        <!-- Live Metric Badges -->
+        <div class="quick-stats-strip">
+          <div class="quick-stat-item">
+            <span class="material-symbols-outlined">description</span>
+            <div><strong id="stat-supported-formats">PDF & DOCX</strong> <span>Resume NLP</span></div>
+          </div>
+          <div class="quick-stat-item">
+            <span class="material-symbols-outlined">work_outline</span>
+            <div><strong id="stat-total-jobs">0</strong> <span>Active Roles</span></div>
+          </div>
+          <div class="quick-stat-item">
+            <span class="material-symbols-outlined">verified</span>
+            <div><strong>98.5%</strong> <span>Retrieval Accuracy</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flagship Chat Card -->
+      <div class="chat-container glass-card" id="chat-container">
+        
+        <!-- Chat Toolbar Header -->
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <div class="ai-avatar-sm">
+              <span class="material-symbols-outlined">psychology</span>
+            </div>
+            <div>
+              <div class="chat-bot-name">Lumina AI HR Copilot</div>
+              <div class="chat-bot-status"><span class="pulse-dot"></span> Online &bull; Hybrid NLP Engine</div>
+            </div>
+          </div>
+          <div class="chat-header-actions">
+            <button id="new-chat-btn" class="btn-action-ghost" title="Start a new conversation">
+              <span class="material-symbols-outlined">refresh</span>
+              <span>New Chat</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- In-Chat Drag & Drop Visual Overlay -->
+        <div id="chat-drag-overlay" class="chat-drag-overlay hidden">
+          <div class="drag-overlay-content">
+            <span class="material-symbols-outlined drag-icon">cloud_upload</span>
+            <h3>Drop your Resume here</h3>
+            <p>Supported: PDF or Word (.docx, .doc) up to 10MB</p>
+          </div>
+        </div>
+
+        <!-- Chat Message Stream -->
+        <div class="chat-messages" id="chat-messages">
+          
+          <!-- Empty State (Welcome & 5 Quick-Start Cards) -->
+          <div id="chat-empty-state" class="chat-empty-state">
+            <div class="empty-state-avatar">
+              <div class="avatar-glow"></div>
+              <span class="material-symbols-outlined">auto_awesome</span>
+            </div>
+            <h2 class="empty-state-title">How can I assist your career today?</h2>
+            <p class="empty-state-subtitle">
+              Upload your resume (PDF/DOCX) for deep ATS evaluation, or click any quick-start prompt below.
+            </p>
+
+            <!-- 5 Quick-Start Action Cards -->
+            <div class="quick-prompts-grid" id="quick-prompts-grid">
+              <button class="quick-prompt-card" data-prompt="📄 Analyze my Resume">
+                <div class="quick-prompt-icon qp-blue"><span class="material-symbols-outlined">description</span></div>
+                <div class="quick-prompt-text">
+                  <div class="quick-prompt-title">📄 Analyze my Resume</div>
+                  <div class="quick-prompt-desc">Extract skills, evaluate strengths & get an instant ATS report.</div>
+                </div>
+              </button>
+
+              <button class="quick-prompt-card" data-prompt="🎯 Check my ATS Score">
+                <div class="quick-prompt-icon qp-purple"><span class="material-symbols-outlined">analytics</span></div>
+                <div class="quick-prompt-text">
+                  <div class="quick-prompt-title">🎯 Check my ATS Score</div>
+                  <div class="quick-prompt-desc">See your ATS breakdown across skills, experience & format.</div>
+                </div>
+              </button>
+
+              <button class="quick-prompt-card" data-prompt="💼 Find suitable jobs">
+                <div class="quick-prompt-icon qp-teal"><span class="material-symbols-outlined">work</span></div>
+                <div class="quick-prompt-text">
+                  <div class="quick-prompt-title">💼 Find suitable jobs</div>
+                  <div class="quick-prompt-desc">Match your qualifications with live industry vacancies.</div>
+                </div>
+              </button>
+
+              <button class="quick-prompt-card" data-prompt="🎤 Prepare for an Interview">
+                <div class="quick-prompt-icon qp-amber"><span class="material-symbols-outlined">record_voice_over</span></div>
+                <div class="quick-prompt-text">
+                  <div class="quick-prompt-title">🎤 Prepare for an Interview</div>
+                  <div class="quick-prompt-desc">Generate tailored technical and behavioral practice questions.</div>
+                </div>
+              </button>
+
+              <button class="quick-prompt-card" data-prompt="🚀 What skills should I learn?">
+                <div class="quick-prompt-icon qp-rose"><span class="material-symbols-outlined">trending_up</span></div>
+                <div class="quick-prompt-text">
+                  <div class="quick-prompt-title">🚀 What skills should I learn?</div>
+                  <div class="quick-prompt-desc">Pinpoint high-impact missing skills to boost your marketability.</div>
+                </div>
+              </button>
+            </div>
+
+            <div class="empty-state-policy-tips">
+              <span class="tip-label">Or ask company policies:</span>
+              <span class="policy-chip" data-prompt="What is the sick leave policy?">"What is the sick leave policy?"</span>
+              <span class="policy-chip" data-prompt="What is the work from home policy?">"What is the WFH policy?"</span>
+              <span class="policy-chip" data-prompt="When is performance review held?">"When is performance review?"</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chat Input & Attachment Area -->
+        <div class="chat-input-wrapper">
+          
+          <!-- Attachment Chip Preview (shown when file is selected) -->
+          <div id="attachment-preview-bar" class="attachment-preview-bar hidden">
+            <div class="attachment-chip">
+              <span class="material-symbols-outlined file-type-icon">description</span>
+              <div class="attachment-chip-info">
+                <span id="attached-filename" class="attached-filename">filename.pdf</span>
+                <span id="attached-filesize" class="attached-filesize">0 KB</span>
+              </div>
+              <span class="attachment-status-badge">Ready to Analyze</span>
+              <button id="remove-attachment-btn" class="attachment-remove-btn" title="Remove attachment">&times;</button>
+            </div>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="chat-input-bar">
+            <!-- Hidden file input for resume uploads -->
+            <input type="file" id="chat-file-input" accept=".pdf,.docx,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" class="hidden" />
+            
+            <button id="chat-attach-btn" class="input-action-btn" title="Upload Resume (PDF/DOCX)">
+              <span class="material-symbols-outlined">attach_file</span>
+            </button>
+
+            <textarea 
+              id="chat-input" 
+              class="chat-textarea" 
+              placeholder="Ask an HR question, or attach a resume (PDF/DOCX)..." 
+              rows="1"
+              autocomplete="off"
+            ></textarea>
+
+            <button id="chat-send" class="chat-send-btn btn--primary" aria-label="Send Message">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+          
+          <div class="chat-footer-hint">
+            <span>💡 Tip: Drag and drop your <strong>.pdf</strong> or <strong>.docx</strong> resume anywhere into this chat to evaluate your profile.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JOB DIRECTORY SECTION -->
+    <section id="section-jobs" class="section scroll-mt-24">
+      <div class="section-header">
+        <div class="section-header-left">
+          <span class="material-symbols-outlined section-icon">work</span>
+          <div>
+            <h2 class="section-title">Job Directory</h2>
+            <p class="section-desc">Explore active roles or view openings matched by the AI Copilot.</p>
           </div>
         </div>
       </div>
       
-      <!-- Recommendation Results -->
-      <div id="recommendations-area" class="results-area hidden" style="margin-top: 40px;">
-        <h3 class="section-title" style="margin-bottom: 24px; font-size:24px;">Top Job Matches</h3>
-        <div id="jobs-grid" class="jobs-grid">
-          <!-- populated by JS -->
-        </div>
-      </div>
-    </section>
-
-    <!-- JOB DIRECTORY -->
-    <section id="section-jobs" class="section scroll-mt-24">
-      <div class="section-header">
-        <span class="material-symbols-outlined section-icon">work</span>
-        <h2 class="section-title">Job Directory</h2>
-      </div>
-      <p class="section-desc">Search active listings or explore department distribution.</p>
-      
       <div class="job-filters glass-card">
-        <input type="text" id="job-search-input" class="chat-input" placeholder="Search by job title or keyword..." />
+        <div class="search-input-wrap">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" id="job-search-input" class="filter-search-input" placeholder="Search by job title, department, or required skill..." />
+        </div>
         <div class="filter-row">
           <select id="filter-dept" class="job-select"><option value="">All Departments</option></select>
           <select id="filter-loc" class="job-select"><option value="">All Locations</option></select>
@@ -249,7 +255,7 @@
       </div>
 
       <div class="jobs-grid" id="jobs-directory-grid">
-        <div class="loading-placeholder">Loading jobs...</div>
+        <div class="loading-placeholder">Loading job opportunities...</div>
       </div>
 
       <div class="charts-grid" style="margin-top:32px;">
@@ -262,39 +268,45 @@
           <div class="chart-container"><canvas id="jobLocChart"></canvas></div>
         </div>
       </div>
+      <!-- Hidden canvas required for backward compatibility with existing JS chart functions -->
+      <canvas id="jobDeptChart" style="display:none;"></canvas>
     </section>
 
-    <!-- EMPLOYEE INSIGHTS -->
+    <!-- EMPLOYEE FEEDBACK & SENTIMENT ANALYTICS SECTION -->
     <section id="section-insights" class="section scroll-mt-24">
       <div class="section-header">
-        <span class="material-symbols-outlined section-icon">monitoring</span>
-        <h2 class="section-title">Feedback Analytics</h2>
+        <div class="section-header-left">
+          <span class="material-symbols-outlined section-icon">monitoring</span>
+          <div>
+            <h2 class="section-title">Feedback Analytics</h2>
+            <p class="section-desc">Real-time NLP sentiment analysis from employee surveys and satisfaction feedback.</p>
+          </div>
+        </div>
       </div>
-      <p class="section-desc">Real-time NLP sentiment analysis from internal employee surveys.</p>
 
       <div class="insights-stats">
         <div class="insight-card glass-card insight-card--green">
           <span class="material-symbols-outlined">sentiment_satisfied</span>
           <div>
-            <div class="insight-label">Positive</div>
+            <div class="insight-label">Positive Sentiment</div>
             <div class="insight-value" id="ins-positive">0</div>
-            <div class="insight-pct" id="ins-positive-pct">0%</div>
+            <div class="insight-pct" id="ins-positive-pct">0% of total</div>
           </div>
         </div>
         <div class="insight-card glass-card insight-card--red">
           <span class="material-symbols-outlined">sentiment_dissatisfied</span>
           <div>
-            <div class="insight-label">Negative</div>
+            <div class="insight-label">Negative Sentiment</div>
             <div class="insight-value" id="ins-negative">0</div>
-            <div class="insight-pct" id="ins-negative-pct">0%</div>
+            <div class="insight-pct" id="ins-negative-pct">0% of total</div>
           </div>
         </div>
         <div class="insight-card glass-card insight-card--gray">
           <span class="material-symbols-outlined">sentiment_neutral</span>
           <div>
-            <div class="insight-label">Neutral</div>
+            <div class="insight-label">Neutral Sentiment</div>
             <div class="insight-value" id="ins-neutral">0</div>
-            <div class="insight-pct" id="ins-neutral-pct">0%</div>
+            <div class="insight-pct" id="ins-neutral-pct">0% of total</div>
           </div>
         </div>
       </div>
@@ -316,30 +328,40 @@
           <div class="chart-container"><canvas id="deptSentimentChart"></canvas></div>
         </div>
         <div class="chart-card glass-card">
-          <h3 class="card-title">Recent Feedback</h3>
+          <h3 class="card-title">Recent Feedback Stream</h3>
           <div id="feedback-list" class="feedback-list">
-            <div class="loading-placeholder">Loading feedback...</div>
+            <div class="loading-placeholder">Loading feedback stream...</div>
           </div>
         </div>
       </div>
-      <!-- Hidden canvas required by JS initialization but we moved dept chart to jobs section, we keep a dummy if script.js requires jobDeptChart id -->
-      <canvas id="jobDeptChart" style="display:none;"></canvas>
     </section>
 
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">Lumina HR Intelligence</div>
+      <div class="footer-brand">Lumina HR Intelligence Suite</div>
       <div class="footer-chips">
-        <span class="chip">NLP Core</span>
-        <span class="chip">TF-IDF Ranking</span>
-        <span class="chip">Sentiment Analysis</span>
-        <span class="chip">VADER Engine</span>
+        <span class="chip">Hybrid NLP Core</span>
+        <span class="chip">ATS Evaluation Engine</span>
+        <span class="chip">TF-IDF Vector Space</span>
+        <span class="chip">VADER Sentiment Analysis</span>
       </div>
+      <p style="font-size:12px; color:var(--text-muted); margin-top:8px;">&copy; 2026 Lumina HR. Production-Grade Conversational Intelligence.</p>
     </div>
   </footer>
 
+  <!-- SVG Defs for gradients -->
+  <svg class="svg-defs">
+    <defs>
+      <linearGradient id="scoreGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="var(--primary)" />
+        <stop offset="100%" stop-color="var(--secondary)" />
+      </linearGradient>
+    </defs>
+  </svg>
   <script src="js/script.js"></script>
 </body>
 </html>
+

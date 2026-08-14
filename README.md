@@ -21,43 +21,43 @@
   <p><em>AI HR Assistant — Interactive Data Science & NLP Platform</em></p>
 </div>
 
-### 🎨 Modern Light & Dark UI
-The responsive SaaS interface supports persistent theme preferences. The glassmorphism-inspired design is dynamically integrated with Chart.js, adapting all data visualizations perfectly to the active theme.
+### 🎨 Premium Luminous Enterprise UI
+The responsive SaaS interface supports persistent theme preferences. Powered by a newly integrated "Luminous Enterprise" glassmorphism design system, the interface leverages fluid optical depth, elegant SVG iconography, and dynamic Chart.js visualizations that adapt perfectly to the active theme.
 
 <div align="center">
   <img src="images/dashboard-light.png" alt="Light Mode" width="48%" />
   <img src="images/dashboard-dark.png" alt="Dark Mode" width="48%" />
 </div>
 
-### 🤖 AI HR Chatbot
-The chatbot utilizes an implemented NLP retrieval pipeline with text normalization and intent routing. It answers HR queries accurately using dataset-driven knowledge without any hardcoded logic.
+### 🤖 AI HR Chatbot & Intelligence Command Center
+The chatbot acts as the central hub, utilizing an implemented NLP retrieval pipeline with text normalization and intent routing. It features a glowing "Super-Input" interface and interactive quick-start cards.
 
 <img src="images/ai-chat.png" alt="AI Chatbot Interface" width="100%" />
 
-### 📄 Resume Intelligence
-Candidates can upload their resumes for instant evaluation. The system performs PDF extraction followed by NLP preprocessing to achieve skill extraction. It provides an explainable ATS score based on experience, education, and content quality.
+### 📄 Embedded Resume Intelligence Card
+Candidates can upload their resumes via drag-and-drop. The system performs NLP preprocessing to achieve skill extraction, generating a premium embedded chat widget with an animated circular ATS gauge, skill tags, and categorized breakdown metrics.
 
 <img src="images/resume-analyzer.png" alt="Resume Analyzer Upload" width="100%" />
 <br/><br/>
 <img src="images/resume-results.png" alt="Resume Analyzer Results" width="100%" />
 
 ### 💼 AI Job Recommendations
-By applying TF-IDF and Cosine Similarity, the recommendation engine matches extracted resume skills to our job database. It provides job ranking, highlights matched/missing skills, and generates live job-platform search links.
+By applying TF-IDF and Cosine Similarity, the recommendation engine matches extracted resume skills to our job database. It generates dynamic live job-platform search buttons with native SVG branding for LinkedIn, Indeed, Naukri, and Wellfound.
 
 <img src="images/job-recommendations.png" alt="Job Recommendations" width="100%" />
 
 ### 🔎 Job Directory
-Browse over 80 fictional corporate job roles. The directory includes robust search capabilities and dynamic filters for department, location, and experience level, complete with external live job-platform search integration.
+Browse over 80 fictional corporate job roles. The directory includes robust search capabilities, beautifully styled dark-mode dropdowns for department, location, and experience, and native application links.
 
 <img src="images/job-directory.png" alt="Job Directory" width="100%" />
 
 ### 📊 Employee Feedback Intelligence
-Real-time sentiment analysis of employee satisfaction surveys. Our VADER Sentiment engine calculates polarity and subjectivity to provide department-level insights through interactive Chart.js visualizations.
+Real-time sentiment analysis of employee satisfaction surveys. Our VADER Sentiment engine calculates polarity to provide department-level insights through a beautifully aligned CSS Grid layout, alongside an interactive, animated feedback stream featuring sentiment-coded badges.
 
 <img src="images/employee-insights.png" alt="Employee Feedback Dashboard" width="100%" />
 
 ### 📱 Responsive Experience
-Built on a fluid 12-column CSS Grid, the interface seamlessly adapts across desktop, tablet, and mobile layouts.
+Built on a fluid responsive grid, the chatbot scales perfectly (`calc(100vh - 160px)`) to provide an immersive experience across desktop, tablet, and mobile layouts.
 
 <div align="center">
   <img src="images/mobile-view.png" alt="Mobile Responsive View" width="350px" />
@@ -69,32 +69,31 @@ Built on a fluid 12-column CSS Grid, the interface seamlessly adapts across desk
 
 ### 1. 🧠 Natural Language HR Chatbot
 A 4-layer hybrid NLP pipeline that understands human conversational intent.
-- **Zero Hardcoded Data**: Knowledge is derived entirely from `dataset/hr_faq.csv`, meaning the AI adapts dynamically when the dataset is updated.
+- **Zero Hardcoded Data**: Knowledge is derived entirely from `dataset/hr_faq.csv`.
 - **Robust Normalization**: Handles casing, punctuation variations, typos, and conversational phrasing effortlessly.
-- **Contextual Awareness**: Capable of answering specific organizational questions and safely declining unrelated queries.
+- **Floating Command Center**: Designed with a sleek, floating Super-Input with a glowing halo border.
 
 ### 2. 📄 Intelligent Resume Analyzer
 Automated candidate screening utilizing advanced Natural Language Processing.
 - **PDF Data Extraction**: Seamlessly extracts raw text from candidate resumes.
-- **Algorithmic Scoring**: Calculates an Applicant Tracking System (ATS) score out of 100 based on Experience, Education, Projects, and Content Quality.
-- **Technical Skill Recognition**: Automatically detects and extracts technical skills from the document.
+- **Animated ATS Ring**: Presents the candidate's score on a visually stunning, premium SVG circular progress ring.
+- **Technical Skill Recognition**: Automatically detects and displays skills as interactive frosted-glass tags.
 
 ### 3. 🎯 Smart Job Recommender & Directory
-A TF-IDF (Term Frequency - Inverse Document Frequency) ranking engine that connects talent to opportunities.
-- **Resume-to-Job Matching**: Compares extracted resume skills against a database of 80+ realistic corporate job openings.
-- **Live Search Integrations**: Generates direct external search links to platforms like **LinkedIn, Indeed, Naukri, and Wellfound** based on the matched job title and location.
-- **Interactive Directory**: Search, filter, and explore jobs across various departments, experience levels, and top tech cities (e.g., Pune, Mumbai, Bangalore).
+A TF-IDF ranking engine that connects talent to opportunities.
+- **Live Search Integrations**: Beautiful, brand-colored SVG icon buttons for direct searches on **LinkedIn, Indeed, Naukri, Wellfound, and Internshala**.
+- **Interactive Directory**: Search and filter using native `<select>` dropdowns fully customized for the dark glassmorphism aesthetic.
 
 ### 4. 📊 Real-Time Feedback Analytics
 Deep sentiment analysis of employee satisfaction surveys.
-- **VADER Sentiment Engine**: Analyzes employee feedback to categorize sentiment as Positive, Negative, or Neutral, calculating precise polarity scores.
-- **Dynamic Dashboards**: Visualizes organizational health using beautifully animated **Chart.js** graphs (Doughnut and Bar charts) that adapt to the active UI theme.
+- **Dynamic Dashboards**: Visualizes organizational health using properly scaled CSS grids (`.charts-grid`, `.insights-stats`).
+- **Interactive Stream**: A scrolling feed of employee feedback styled as frosted glass cards with interactive hover-slides and precise VADER polarity badges.
 
-### 5. 🎨 Premium "SaaS" User Interface
+### 5. 🎨 Premium "Luminous Enterprise" User Interface
 A stunning frontend engineered entirely with Vanilla JS and pure CSS.
-- **Glassmorphism Design**: Features a premium "Slate 950" dark mode (`The Void`) with translucent, blurred card surfaces.
-- **Theme Persistence**: Instant Light/Dark mode toggling with `localStorage` memory and dynamic Chart.js grid adaptations.
-- **Responsive Grid**: Built on a fluid 12-column grid system, ensuring flawless rendering on Desktops, Tablets, and Mobile devices.
+- **Glassmorphism Design**: Features translucent, blurred card surfaces (`backdrop-filter: blur(20px)`) and a deep indigo-charcoal gradient background.
+- **Advanced Sizing**: A fully immersive `1600px` max-width and properly calculated viewport heights (`vh`) for the chat environment.
+- **Top-Tier Typography**: Utilizes the geometric **Outfit** font for headings and **Inter** for data readability.
 
 ---
 
